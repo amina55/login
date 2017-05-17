@@ -17,8 +17,18 @@
                             $("#signup-status").html(data);
                         }
                     },
-                    error: function () {
-                        $("#signup-status").html('Error in Ajax Call');
+                    error: function (jqXHR, status, err) {
+                        alert("error "+ err);
+                        alert("status "+ status);
+
+                        console.log('jqXHR:');
+                        console.log(jqXHR);
+                        console.log('status');
+                        console.log(status);
+                        console.log('error');
+                        console.log(err);
+
+                        $("#signup-status").html(err+ 'Error in Ajax Call');
                     }
                 });
             }
