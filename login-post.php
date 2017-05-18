@@ -1,8 +1,7 @@
 <?php
-
+session_start();
 
 try{
-    session_start();
     if ($_POST["captcha"] == $_SESSION["captcha_code"]) {
         $userName = trim($_POST['username']);
         $password = trim($_POST['password']);
@@ -31,5 +30,4 @@ try{
 }catch (Exception $e) {
     echo "<p class='error'>Error : " . $e->getMessage() . "</p>";
 }
-
 ?>

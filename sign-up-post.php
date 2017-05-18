@@ -1,6 +1,7 @@
 <?php
+echo 1; exit;
+session_start();
 try{
-    session_start();
     if ($_POST["captcha"] == $_SESSION["captcha_code"]) {
         $name = trim($_REQUEST['name']);
         $username = trim($_REQUEST['username']);
