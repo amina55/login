@@ -54,7 +54,7 @@ if(!empty($_SESSION['logged_in'])) {
     </div>
 
     <div class="login-body">
-        <form method="POST" action="login-post.php" accept-charset="UTF-8" class="form-horizontal form-login" id="user-login">
+        <form class="form-horizontal form-login">
             <div class="form-group ">
                 <div id="login-status" class="col-sm-12">
                 </div>
@@ -92,7 +92,7 @@ if(!empty($_SESSION['logged_in'])) {
             <?php include "captcha.php" ?>
             <div class="form-group" style="margin-bottom: 40px;">
                 <div class="col-sm-12">
-                    <input class="btn btn-default submit text-uppercase" onclick="sendContact()" value="Log In">
+                    <input type="button" class="btn btn-global btn-global-thin text-uppercase" onclick="sendContact()" value="Log In">
                 </div>
             </div>
         </form>

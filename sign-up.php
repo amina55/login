@@ -28,7 +28,7 @@
                         console.log('error');
                         console.log(err);
 
-                        $("#signup-status").html(err+ 'Error in Ajax Call');
+                        $("#signup-status").html(err+ ' Error in Ajax Call');
                     }
                 });
             }
@@ -42,7 +42,6 @@
             var password = $("#password").val();
             var confirm_password = $("#confirm_password").val();
             var password_length = password.length;
-            console.log("password length "+password_length);
             var inputs = ['username', 'name', 'email', 'password', 'confirm_password', 'captcha'];
             for (var i = 0 ; i < inputs.length ; i++ ) {
                 if (!$("#"+inputs[i]).val()) {
@@ -72,9 +71,9 @@
     </div>
 
     <div class="login-body">
-        <form accept-charset="UTF-8" class="form-horizontal form-login" id="user-login">
+        <form accept-charset="UTF-8" class="form-horizontal form-login">
             <div class="form-group ">
-                <div id="signup-status" class="col-sm-12s">
+                <div id="signup-status" class="col-sm-12">
                 </div>
             </div>
             <div class="form-group ">
@@ -139,7 +138,7 @@
 
             <div class="form-group" style="margin-bottom: 40px;">
                 <div class="col-sm-12">
-                    <input class="btn btn-default submit text-uppercase" type="button" onclick="sendContact()" value="Sign Up">
+                    <input class="btn btn-global btn-global-thin text-uppercase" type="button" onclick="sendContact()" value="Sign Up">
                 </div>
             </div>
         </form>
