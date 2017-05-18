@@ -1,5 +1,4 @@
 <?php
-echo 1; exit;
 session_start();
 try{
     if ($_POST["captcha"] == $_SESSION["captcha_code"]) {
